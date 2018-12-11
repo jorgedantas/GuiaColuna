@@ -1,0 +1,73 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Voltar</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding class="auto-scroll">
+  <ion-grid fixed>
+    <ion-row align-items-center justify-content-center>
+      <ion-col col-12 col-sm-12 col-md-6>
+        <form [formGroup]="form">
+          <h1 text-center class="oleo-script">Cadastrar jogo</h1>
+          <ion-list>
+            <ion-item>
+                <ion-label color="primary">Mandante</ion-label>
+              <ion-input type="text" placeholder="Mandante" maxlength="140" formControlName="mandante" (focus)="focus()"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label color="primary">Visitante</ion-label>
+              <ion-input type="text" placeholder="Visitante" maxlength="140" formControlName="visitante"></ion-input>
+            </ion-item>
+            <ion-item col-12 col-sm-12 col-md-12 class="field eight wide">
+              <ion-input type="number" placeholder="Gol mandante" maxlength="2" formControlName="placarmandante"></ion-input>
+              <ion-input type="number" placeholder="Gol visitante" maxlength="2" formControlName="placarvisitante"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label color="primary">Local</ion-label>
+              <ion-input type="text" placeholder="Local" maxlength="20" formControlName="local"></ion-input>
+            </ion-item>
+
+            <ion-item>
+                <ion-label color="primary">Data</ion-label>
+              <ion-datetime displayFormat="DD/MMMM/YYYY" min="2009" formControlName="data" placeholder="Data"></ion-datetime>
+            </ion-item>
+
+            <ion-item>
+              <ion-label color="primary">Hora</ion-label>
+              <ion-input type="time" placeholder="Hora" maxlength="20" formControlName="hora"></ion-input>
+            </ion-item>
+
+            <ion-item>
+                <ion-label color="primary">Observação</ion-label>
+              <ion-textarea placeholder="Observação" formControlName="observacao"></ion-textarea>
+            </ion-item>
+          </ion-list>
+
+          <!-- Adicionar jogador -->
+          <button ion-item no-lines clear large (click)=" AddJogador()">
+            <ion-icon ios="ios-person-add" md="md-person-add"></ion-icon>
+            Adicionar jogador
+          </button>
+
+          <ul class="list-group" formArrayName="jogadores">
+            <div *ngFor="let item of form.controls['jogadores'].controls; let i = index">
+              <div class="city-box" formGroupName="{{i}}">
+                <ion-row align-items-center justify-content-center>
+                  <div class="field eight wide" col-8 col-sm-8 col-md-6>
+                    <ion-label color="primary">Nome</ion-label>
+                    <ion-input type="text" placeholder="Nome" formControlName="nome"></ion-input>
+                  </div>
+                  <div class="field eight wide" col-4 col-sm-4 col-md-4>
+                    <ion-label color="primary">Gol</ion-label>
+                    <ion-input type="number" placeholder="Gol" formControlName="gol"></ion-input>
+                  </div>
+                </ion-row>
+              </div>
+            </div>
+          </ul>
+        </form>
+        <button ion-button block large outline color="blue" (click)="submit()">Enviar</button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

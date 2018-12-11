@@ -1,0 +1,41 @@
+<ion-header>
+    <ion-navbar>
+      <ion-title>Voltar</ion-title>
+    </ion-navbar>
+    
+  <ion-buttons start> 
+      <button ion-button (click)="dismiss()"> Fechar Recomendações
+        <span ion-text color="primary" showWhen="ios">Fechar</span>
+        <ion-icon name="md-close" showWhen="android, windows">Fechar</ion-icon>
+      </button>
+    </ion-buttons>
+  
+  </ion-header>
+  
+  <ion-content>
+    
+    <ion-content class="auto-scroll">
+
+      <ion-card>
+        
+        <div *ngIf="Video" id="Video"></div>
+
+        <ion-card-content>
+          <ion-card-title>
+              {{Titulo}}
+            </ion-card-title>
+     
+             {{Descricao}}
+          
+        </ion-card-content>
+      </ion-card>
+    </ion-content> 
+        
+    
+
+     
+  </ion-content>
+  
+           
+  
+  

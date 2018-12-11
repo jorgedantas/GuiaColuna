@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-toolbar color="blue">
+    <ion-title text-center class="oleo-script">Olho D'água Futebol Clube {{ user }}</ion-title>
+  </ion-toolbar>
+  <ion-navbar>
+    <ion-title>Voltar</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding class="auto-scroll">
+  <ion-list no-lines *ngIf="jogo">
+    <ion-item>
+      <ion-title text-center class="lista-jogo-title">
+        {{jogo.mandante.nome}} {{jogo.golsMandante}} X {{jogo.golsVisitante}} {{jogo.visitante.nome}}
+      </ion-title>
+    </ion-item>
+    <ion-item>
+      <ion-title text-start>
+        Data: {{jogo.dataJogo | date:"dd/MM/yyyy" }} - {{jogo.horaJogo}} \n
+        Local: {{jogo.campo.nome}}
+      </ion-title>
+    </ion-item>
+    <ion-item>
+      <ion-grid>
+        <ion-row >
+          <ion-col col-1>#</ion-col>
+          <ion-col col-9 text-center>Jogador</ion-col>
+          <ion-col col-2 text-center>Gols</ion-col>
+        </ion-row>
+        <ion-row *ngFor="let item of jogo.jogadores; let i = index">
+          <ion-col col-1>{{i + 1}}</ion-col>
+          <ion-col col-9 [ngStyle]="{'background-color':item.gols > 0 ? '#dedede' : '' }">{{item.jogador.nome}}</ion-col>
+          <ion-col col-2 text-center>{{item.gols}}</ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-item>
+  </ion-list>
+</ion-content>

@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-toolbar color="blue">
+    <ion-title text-center class="oleo-script"> \nPatologias </ion-title>
+    <ion-buttons end>
+        \n
+       <button ion-button icon-only (click)="sair()">
+      
+        <ion-icon name="md-exit">Sair</ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+\n
+<ion-content padding class="auto-scroll" color="blue">
+  <ion-grid class="grid-basic-page">
+    <ion-row col-12 col-sm-9 col-md-6 col-lg-4 col-xl-3 justify-content-around>
+      <ion-col col-12 text-center class="col-grid" (click)="sobre()">
+        <ion-icon name='ios-person' class="icon-size"></ion-icon>
+        <ion-title text-center>CERVICALGIA</ion-title>
+      </ion-col>
+      
+    </ion-row>
+   
+    <ion-row col-12 col-sm-9 col-md-6 col-lg-4 col-xl-3 justify-content-around>
+      <ion-col col-12 (click)="historico()" text-center class="col-grid">
+        <ion-icon name='ios-body'  class="icon-size"></ion-icon>
+        <ion-title text-center>LOMBALGIA</ion-title>
+      </ion-col>
+      
+    </ion-row>
+   
+  </ion-grid>
+</ion-content>
+

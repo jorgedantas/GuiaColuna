@@ -1,0 +1,1162 @@
+<ion-header>
+        <ion-navbar>
+          <ion-title>Voltar</ion-title>
+        </ion-navbar>
+        
+      <ion-buttons start> 
+          <button ion-button (click)="dismiss()"> Fechar
+            <span ion-text color="primary" showWhen="ios">Fechar</span>
+            <ion-icon name="md-close" showWhen="android, windows">Fechar</ion-icon>
+          </button>
+        </ion-buttons>
+      
+      </ion-header>
+      
+      <ion-content>
+          <!-- <iframe src="https://www.youtube.com/embed/xWZlWpqidvI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+          <ion-content>
+      
+              <ion-item-group>
+                  <button ion-button color="dark" clear>CERVICALGIA - INTERVENÇÃO </button>
+                
+                  <ion-item-group>
+                    <ion-item-divider color="dark">CIF: CERVICALGIA COM DEFICIT DE MOBILIDADE \n - QUADRO AGUDO  </ion-item-divider>
+                  <ion-item >
+                    
+                    <button ion-item (click)=" openModal01()">
+                    MANIPULÇÃO TORÁCICA  
+                    
+                    <ion-icon name="arrow-forward"></ion-icon>
+                    
+                    </button> 
+                    
+                    </ion-item>
+                   
+                    
+                    
+                    
+                    <ion-item >
+                    
+                    <button ion-item (click)="openModal02()">
+                    ALONGAMENTOS ATIVO PARA FLEXORES  
+                    
+                    <ion-icon name="arrow-forward"></ion-icon>
+                    
+                    </button> 
+                    
+                    </ion-item>
+                    
+                    
+                    <ion-item >
+                    
+                    <button ion-item (click)="openModal03()">
+                    ALONGAMENTO ATIVO PARA EXTENSORES 
+                    
+                    <ion-icon name="arrow-forward"></ion-icon>
+                    
+                    </button> 
+                    
+                    </ion-item>
+                    
+                    <ion-item >
+                    
+                    <button ion-item (click)="openModal04()">
+                    ALONGAMENTO ATIVO PARA INCLINADORES 
+                    
+                    <ion-icon name="arrow-forward"></ion-icon>
+                    
+                    </button> 
+                    
+                    </ion-item>
+                    
+                    
+                    <ion-item >
+                    
+                    <button ion-item (click)="openModal05()">
+                    ALONGAMENTO ATIVO PARA ROTADORES 
+                    
+                    <ion-icon name="arrow-forward"></ion-icon>
+                    
+                    </button> 
+                    
+                    </ion-item>
+                    
+                    
+                    
+                    <ion-item >
+                    
+                    <button ion-item (click)="openModal06()">
+                    EXERCÍCIOS DE FORÇA DE MMSS E ARTICULAÇÃO \n ESCAPULO TORÁCICA 
+                    
+                    <ion-icon name="arrow-forward"></ion-icon>
+                    
+                    </button> 
+                    
+                    </ion-item>
+                    
+                    
+                    
+                    
+                    <ion-item >
+                    
+                    <button ion-item (click)="openModal07()">
+                    MANIPULAÇÃO CERVICAL
+                    
+                    <ion-icon name="arrow-forward"></ion-icon>
+                    
+                    </button> 
+                    
+                    </ion-item>
+                    
+                    
+                    
+                    
+                    <ion-item >
+                    
+                    <button ion-item (click)="openModal08()">
+                    MOBILIZAÇÃO PASSIVA: FLEXÃO CERVICAL 
+                    
+                    <ion-icon name="arrow-forward"></ion-icon>
+                    
+                    </button> 
+                    
+                    </ion-item>
+                    
+                    
+                    
+                    <ion-item >
+                    
+                    <button ion-item (click)="openModal09()">
+                    MOBILIZAÇÃO PASSIVA: INCLINAÇÃO CERVICAL  
+                    
+                    <ion-icon name="arrow-forward"></ion-icon>
+                    
+                    </button> 
+                    
+                    </ion-item>]
+                    
+                    
+                    
+                    <ion-item >
+                    
+                    <button ion-item (click)="openModal10()">
+                    MOBILIZAÇÃO PASSIVA: ROTAÇÃO CERVICAL 
+                    
+                    <ion-icon name="arrow-forward"></ion-icon>
+                    
+                    </button> 
+                    
+                    </ion-item>
+                  </ion-item-group>
+                    
+                    
+                    <!-- QUADRO SUBAGUDO -->
+                    
+                    <ion-item-group>
+                      <ion-item-divider color="dark">CIF: CERVICALGIA COM DEFICIT DE MOBILIDADE \n  - QUADRO SUBAGUDO  </ion-item-divider>
+
+                    <ion-item >
+                    
+                    <button ion-item (click)="openModal11()">
+                    EXERCÍCIO DE RESISTÊNCIA PARA \n PESCOÇO: FLEXORES 
+                    
+                    <ion-icon name="arrow-forward"></ion-icon>
+                    
+                    </button> 
+                    
+                    </ion-item>
+                    
+                    
+                    <ion-item >
+                    
+                    <button ion-item (click)="openModal12()">
+                    EXERCÍCIO DE RESISTÊNCIA PARA \n  PESCOÇO: EXTENSORES 
+                    
+                    <ion-icon name="arrow-forward"></ion-icon>
+                    
+                    </button> 
+                    
+                    </ion-item>
+                    
+                    
+                    
+                    <ion-item >
+                    
+                    <button ion-item (click)="openModal13()">
+                    EXERCÍCIO DE RESISTÊNCIA PARA \n PESCOÇO: INCLINADORES 
+                    
+                    <ion-icon name="arrow-forward"></ion-icon>
+                    
+                    </button> 
+                    
+                    </ion-item>
+                    
+                    
+                    <ion-item >
+                    
+                    <button ion-item (click)="openModal14()">
+                    EXERCÍCIO DE RESISTÊNCIA PARA \n  CINTURA ESCAPULAR 
+                    
+                    <ion-icon name="arrow-forward"></ion-icon>
+                    
+                    </button> 
+                    
+                    </ion-item>
+                    
+                    
+                    
+                    <ion-item >
+                    
+                    <button ion-item (click)="openModal15()">
+                    MANIPULAÇÃO TORÁCICA E CERVICAL -
+                    
+                    <ion-icon name="arrow-forward"></ion-icon>
+                    
+                    </button> 
+                    
+                    </ion-item>
+                    
+                  </ion-item-group>
+                    
+                    
+                    
+                    <!-- QUARDROS CRONICOS -->
+                    
+                    
+                    
+                    
+                    <ion-item-group>
+                      <ion-item-divider color="dark">CIF: CERVICALGIA COM DEFICIT DE MOBILIDADE \n  - QUADROS CRONICOS </ion-item-divider>
+                    <ion-item >
+                    
+                    <button ion-item>
+                    TREINAMENTO DE REEDUCAÇÃO POSTURAL GLOBAL  
+                    
+                 
+                    
+                    </button> 
+                    
+                    </ion-item>
+                    
+                    
+                    
+                    <ion-item >
+                    
+                    <button ion-item (click)="openModal17()">
+                    EXERCÍCIOS PARA ARTICULAÇÃO \n  ESCAPULO TORÁCICA  
+                    
+                    <ion-icon name="arrow-forward"></ion-icon>
+                    
+                    </button> 
+                    
+                    </ion-item>
+                    
+                    
+                    
+                    
+                    <ion-item >
+                    
+                    <button ion-item (click)="openModal18()">
+                    CONDICIONAMENTO AERÓBICO   
+                    
+                    <ion-icon name="arrow-forward"></ion-icon>
+                    
+                    </button> 
+                    
+                    </ion-item>
+                    
+                    
+                    
+                    <ion-item >
+                    
+                    <button ion-item (click)="openModal19()">
+                    ALONGAMENTOS ATIVO PARA FLEXORES  
+                    
+                    <ion-icon name="arrow-forward"></ion-icon>
+                    
+                    </button> 
+                    
+                    </ion-item>
+                    
+                    
+                    <ion-item >
+                    
+                    <button ion-item (click)="openModal20()">
+                    ALONGAMENTO ATIVO PARA EXTENSORES  
+                    
+                    <ion-icon name="arrow-forward"></ion-icon>
+                    
+                    </button> 
+                    
+                    </ion-item>
+                    
+                    <ion-item >
+                    
+                    <button ion-item (click)="openModal21()">
+                    ALONGAMENTO ATIVO PARA INCLINADORES 
+                    
+                    <ion-icon name="arrow-forward"></ion-icon>
+                    
+                    </button> 
+                    
+                    </ion-item>
+                    
+                    
+                    <ion-item >
+                    
+                    <button ion-item (click)="openModal22()">
+                    ALONGAMENTO ATIVO PARA ROTADORES 
+                    
+                    <ion-icon name="arrow-forward"></ion-icon>
+                    
+                    </button> 
+                    
+                    </ion-item>
+                    
+                    
+                    
+                    
+                    <ion-item >
+                    
+                        <button ion-item (click)="openModal23()">
+                        TRAÇÃO CERVICAL
+                        
+                        <ion-icon name="arrow-forward"></ion-icon>
+                        
+                        </button> 
+                    
+                    </ion-item>
+                    
+                    
+                    <ion-item >
+                    
+                    <button ion-item >
+                    RECURSOS TERAPEUTICOS INDICADOS: \n AGULHAMENTO A SECO E LASERTERAPIA –
+                   
+                    
+                    </button> 
+                    
+                    </ion-item>
+                    
+                    
+                    
+                    
+                    <ion-item >
+                    
+                    <button ion-item (click)="openModal25()">
+                    ORIENTAÇÕES 
+                    
+                    <ion-icon name="arrow-forward"></ion-icon>
+                    
+                    </button> 
+                    
+                    </ion-item>
+                    
+                  </ion-item-group>
+                    
+                    
+                    <!-- CERVICALGIA COM DEFICT DE COORDENAÇAO: -->
+                    
+                    
+                    <!-- QUADRO AGUDO -->
+                    <ion-item-group>
+                      <ion-item-divider color="dark">CIF: CERVICALGIA COM DEFICT DE COORDENAÇAO \n  - QUADRO AGUDO  </ion-item-divider>
+
+                    <ion-item >
+                    
+                    <button ion-item >
+                    REEDUCAÇÃO POSTURAL GLOBAL 
+                    
+                   
+                    
+                    </button> 
+                    
+                    </ion-item>
+                    
+                    
+                    
+                    
+                    <ion-item >
+                    
+                    <button ion-item (click)="openModal27()">
+                    ALONGAMENTOS ATIVO PARA FLEXORES  
+                    
+                    <ion-icon name="arrow-forward"></ion-icon>
+                    
+                    </button> 
+                    
+                    </ion-item>
+                    
+                    
+                    <ion-item >
+                    
+                    <button ion-item (click)="openModal28()">
+                    ALONGAMENTO ATIVO PARA EXTENSORES 
+                    
+                    <ion-icon name="arrow-forward"></ion-icon>
+                    
+                    </button> 
+                    
+                    </ion-item>
+                    
+                    <ion-item >
+                    
+                    <button ion-item (click)="openModal29()">
+                    ALONGAMENTO ATIVO PARA INCLINADORES 
+                    
+                    <ion-icon name="arrow-forward"></ion-icon>
+                    
+                    </button> 
+                    
+                    </ion-item>
+                    
+                    
+                    <ion-item >
+                    
+                    <button ion-item (click)="openModal30()">
+                    ALONGAMENTO ATIVO PARA ROTADORES 
+                    
+                    <ion-icon name="arrow-forward"></ion-icon>
+                    
+                    </button> 
+                    
+                    </ion-item>
+                    
+                    
+                    <ion-item >
+                    
+                    <button ion-item (click)="openModal31()">
+                    ORIENTAÇÕES 
+                    
+                    <ion-icon name="arrow-forward"></ion-icon>
+                    
+                    </button> 
+                    
+                    </ion-item>
+                    
+                    
+                    
+                    <ion-item >
+                    
+                    <button ion-item (click)="openModal32()">
+                    MOBILIZAÇÃO PASSIVA: FLEXÃO CERVICAL 
+                    
+                    <ion-icon name="arrow-forward"></ion-icon>
+                    
+                    </button> 
+                    
+                    </ion-item>
+                    
+                    
+                    
+                    <ion-item >
+                    
+                    <button ion-item (click)="openModal33()">
+                    MOBILIZAÇÃO PASSIVA: INCLINAÇÃO CERVICAL 
+                    
+                    <ion-icon name="arrow-forward"></ion-icon>
+                    
+                    </button> 
+                    
+                    </ion-item>]
+                    
+                    
+                    
+                    <ion-item >
+                    
+                    <button ion-item (click)="openModal34()">
+                    MOBILIZAÇÃO PASSIVA: ROTAÇÃO CERVICAL 
+                    
+                    <ion-icon name="arrow-forward"></ion-icon>
+                    
+                    </button> 
+                    
+                    </ion-item>
+                    
+                    
+                    <ion-item >
+                    
+                    <button ion-item (click)="openModal35()">
+                    EXERCÍCIO DE FORTALECIMENTO PARA \n PESCOÇO: FLEXORES 
+                    
+                    <ion-icon name="arrow-forward"></ion-icon>
+                    
+                    </button> 
+                    
+                    </ion-item>
+                    
+                    
+                    <ion-item >
+                    
+                    <button ion-item (click)="openModal36()">
+                    EXERCÍCIO DE FORTALECIMENTO PARA\n  PESCOÇO: EXTENSORES 
+                    
+                    <ion-icon name="arrow-forward"></ion-icon>
+                    
+                    </button> 
+                    
+                    </ion-item>
+                    
+                    
+                    
+                    <ion-item >
+                    
+                    <button ion-item (click)="openModal37()">
+                    EXERCÍCIO DE FORTALECIMENTO PARA \n PESCOÇO: INCLINADORES 
+                    
+                    <ion-icon name="arrow-forward"></ion-icon>
+                    
+                    </button> 
+                    
+                    </ion-item>
+                    
+                    
+                    
+                    
+                    
+                    <ion-item >
+                    
+                    <button ion-item (click)="openModal38()">
+                    CONDICIONAMENTO AERÓBICO 
+                    
+                    <ion-icon name="arrow-forward"></ion-icon>
+                    
+                    </button> 
+                    
+                    </ion-item>
+                    
+                    
+                    
+                    <ion-item >
+                    
+                    <button ion-item >
+                    ANALGESIA 
+                    
+                    
+                    
+                    </button> 
+                    
+                    </ion-item>
+                    
+                    
+                    
+                    <ion-item >
+                    
+                    <button ion-item (click)="openModal40()">
+                    MONITORAR ESTADO DO PACIENTE   
+                    
+                    <ion-icon name="arrow-forward"></ion-icon>
+                    
+                    </button> 
+                    
+                    </ion-item>
+                    
+                  </ion-item-group>
+                    
+
+                    
+                    <!-- QUADROS CRONICOS -->
+                    
+                    <ion-item-group>
+                      <ion-item-divider color="dark">CIF: CERVICALGIA COM DEFICT DE COORDENAÇAO \n - QUADRO CRONICO  </ion-item-divider>
+
+                    <ion-item >
+                    
+                    <button ion-item (click)="openModal41()">
+                    ORIENTAÇÕES  
+                    
+                    <ion-icon name="arrow-forward"></ion-icon>
+                    
+                    </button> 
+                    
+                    </ion-item>
+                    
+                  </ion-item-group>
+                     
+
+                    
+                    
+                    <!-- CERVICALGIA COM CEFALÉIA CERVICOGENICA -->
+                    
+                    
+                    
+                    <!-- QUADROS AGUDOS -->
+                    
+                    <ion-item-group>
+                      <ion-item-divider color="dark">CIF: CERVICALGIA COM CEFALÉIA CERVICOGENICA \n  - QUADRO AGUDO  </ion-item-divider>
+
+                      <ion-item >
+                    
+                          <button ion-item (click)="openModal42()">
+                          EXERCÍCIO DE MOBILIDADE ATIVA PARA PESCOÇO: FLEXORES
+                          
+                          <ion-icon name="arrow-forward"></ion-icon>
+                          
+                          </button> 
+                          
+                          </ion-item>
+                          
+                          
+                          <ion-item >
+                          
+                          <button ion-item (click)="openModal43()">
+                              EXERCÍCIO DE MOBILIDADE ATIVA PARA PESCOÇO: EXTENSORES
+                          
+                          <ion-icon name="arrow-forward"></ion-icon>
+                          
+                          </button> 
+                          
+                          </ion-item>
+                          
+                          
+                          
+                          <ion-item >
+                          
+                          <button ion-item (click)="openModal44()">
+                              EXERCÍCIO DE MOBILIDADE ATIVA PARA PESCOÇO: INCLINADORES 
+                          
+                          <ion-icon name="arrow-forward"></ion-icon>
+                          
+                          </button> 
+                          
+                          </ion-item>
+                    
+                    
+                    <ion-item >
+                    
+                    <button ion-item (click)="openModal45()">
+                    SELF SNAG -
+                    
+                    <ion-icon name="arrow-forward"></ion-icon>
+                    
+                    </button> 
+                    
+                    </ion-item>
+                    
+                    
+                  </ion-item-group>
+                     
+                    
+                    <!-- QUADRO SUBAGUDO -->
+                    
+                    
+                    <ion-item-group>
+                      <ion-item-divider color="dark">CIF: CERVICALGIA COM CEFALÉIA CERVICOGENICA \n  - QUADRO SUBAGUDO  </ion-item-divider>
+
+                    <ion-item >
+                    
+                    <button ion-item (click)="openModal46()">
+                    MANIPULAÇÃO CERVICAL 
+                    
+                    <ion-icon name="arrow-forward"></ion-icon>
+                    
+                    </button> 
+                    
+                    </ion-item>
+                    
+                    
+                    
+                    
+                    <ion-item >
+                    
+                    <button ion-item (click)="openModal47()">
+                    SELF SNAG
+                    
+                    <ion-icon name="arrow-forward"></ion-icon>
+                    
+                    </button> 
+                    
+                    </ion-item>
+                    
+                    
+                    
+                    
+                    <ion-item >
+                    
+                    <button ion-item (click)="openModal48()">
+                    MOBILIZAÇÃO PASSIVA: FLEXÃO CERVICAL 
+                    
+                    <ion-icon name="arrow-forward"></ion-icon>
+                    
+                    </button> 
+                    
+                    </ion-item>
+                    
+                    
+                    
+                    <ion-item >
+                    
+                    <button ion-item (click)="openModal49()">
+                    MOBILIZAÇÃO PASSIVA: INCLINAÇÃO CERVICAL 
+                    
+                    <ion-icon name="arrow-forward"></ion-icon>
+                    
+                    </button> 
+                    
+                    </ion-item>]
+                    
+                    
+                    
+                    <ion-item >
+                    
+                    <button ion-item (click)="openModal50()">
+                    MOBILIZAÇÃO PASSIVA: ROTAÇÃO CERVICAL 
+                    
+                    <ion-icon name="arrow-forward"></ion-icon>
+                    
+                    </button> 
+                    
+                    </ion-item>
+                    
+                  </ion-item-group>
+                   
+                    
+                    <!-- QUADRO CRONICO -->
+                    
+                    <ion-item-group>
+                      <ion-item-divider color="dark">CIF: CERVICALGIA COM CEFALÉIA CERVICOGENICA \n  - QUADRO CRONICO  </ion-item-divider>
+
+                    <ion-item >
+                    
+                    <button ion-item (click)="openModal51()">
+                    MANIPULAÇÃO DA CERVICAL E DAS \n VERTEBRAS TORÁCICAS
+                    
+                    <ion-icon name="arrow-forward"></ion-icon>
+                    
+                    </button> 
+                    
+                    </ion-item>
+                    
+                    
+                    
+                    
+                    
+                    <ion-item >
+                    
+                    <button ion-item (click)="openModal52()">
+                    MOBILIZAÇÃO PASSIVA: FLEXÃO CERVICAL 
+                    
+                    <ion-icon name="arrow-forward"></ion-icon>
+                    
+                    </button> 
+                    
+                    </ion-item>
+                    
+                    
+                    
+                    <ion-item >
+                    
+                    <button ion-item (click)="openModal53()">
+                    MOBILIZAÇÃO PASSIVA: INCLINAÇÃO CERVICAL 
+                    
+                    <ion-icon name="arrow-forward"></ion-icon>
+                    
+                    </button> 
+                    
+                    </ion-item>]
+                    
+                    
+                    
+                    <ion-item >
+                    
+                    <button ion-item (click)="openModal54()">
+                    MOBILIZAÇÃO PASSIVA: ROTAÇÃO CERVICAL 
+                    
+                    <ion-icon name="arrow-forward"></ion-icon>
+                    
+                    </button> 
+                    
+                    </ion-item>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <ion-item >
+                    
+                    <button ion-item (click)="openModal55()">
+                    ALONGAMENTOS ATIVO PARA FLEXORES  
+                    
+                    <ion-icon name="arrow-forward"></ion-icon>
+                    
+                    </button> 
+                    
+                    </ion-item>
+                    
+                    
+                    <ion-item >
+                    
+                    <button ion-item (click)="openModal56()">
+                    ALONGAMENTO ATIVO PARA EXTENSORES 
+                    
+                    <ion-icon name="arrow-forward"></ion-icon>
+                    
+                    </button> 
+                    
+                    </ion-item>
+                    
+                    <ion-item >
+                    
+                    <button ion-item (click)="openModal57()">
+                    ALONGAMENTO ATIVO PARA INCLINADORES 
+                    
+                    <ion-icon name="arrow-forward"></ion-icon>
+                    
+                    </button> 
+                    
+                    </ion-item>
+                    
+                    
+                    <ion-item >
+                    
+                    <button ion-item (click)="openModal58()">
+                    ALONGAMENTO ATIVO PARA ROTADORES 
+                    
+                    <ion-icon name="arrow-forward"></ion-icon>
+                    
+                    </button> 
+                    
+                    </ion-item>
+                    
+                    
+                 
+                    
+                    
+                    
+                    <ion-item >
+                    
+                    <button ion-item (click)="openModal59()">
+                    EXERCÍCIO DE RESISTÊNCIA PARA \n PESCOÇO: FLEXORES 
+                    
+                    <ion-icon name="arrow-forward"></ion-icon>
+                    
+                    </button> 
+                    
+                    </ion-item>
+                    
+                    
+                    <ion-item >
+                    
+                    <button ion-item (click)="openModal60()">
+                    EXERCÍCIO DE RESISTÊNCIA PARA \n PESCOÇO: EXTENSORES 
+                    
+                    <ion-icon name="arrow-forward"></ion-icon>
+                    
+                    </button> 
+                    
+                    </ion-item>
+                    
+                    
+                    
+                    <ion-item >
+                    
+                    <button ion-item (click)="openModal61()">
+                    EXERCÍCIO DE RESISTÊNCIA PARA \n  PESCOÇO: INCLINADORES 
+                    
+                    <ion-icon name="arrow-forward"></ion-icon>
+                    
+                    </button> 
+                    
+                    </ion-item>
+                    
+                    
+                    <ion-item >
+                    
+                    <button ion-item (click)="openModal62()">
+                    EXERCÍCIO DE RESISTÊNCIA \n  PARA CINTURA ESCAPULAR 
+                    
+                    <ion-icon name="arrow-forward"></ion-icon>
+                    
+                    </button> 
+                    
+                    </ion-item>
+                    
+                  </ion-item-group>
+                     
+
+                    
+                    
+                    
+                    <!-- CERVICALGIA COM DOR IRRADIADA -->
+                    
+                    
+                    <!-- QUADRO AGUDO -->
+                    
+                    <ion-item-group>
+                      <ion-item-divider color="dark">CIF: CERVICALGIA COM DOR IRRADIADA \n  - QUADRO AGUDO  </ion-item-divider>
+
+                    <ion-item >
+                    
+                    <button ion-item (click)="openModal63()">
+                    EXERCÍCIO DE RESISTÊNCIA PARA \n PESCOÇO: FLEXORES 
+                    
+                    <ion-icon name="arrow-forward"></ion-icon>
+                    
+                    </button> 
+                    
+                    </ion-item>
+                    
+                    
+                    <ion-item >
+                    
+                    <button ion-item (click)="openModal64()">
+                    EXERCÍCIO DE RESISTÊNCIA PARA \n  PESCOÇO: EXTENSORES 
+                    
+                    <ion-icon name="arrow-forward"></ion-icon>
+                    
+                    </button> 
+                    
+                    </ion-item>
+                    
+                    
+                    
+                    <ion-item >
+                    
+                    <button ion-item (click)="openModal65()">
+                    EXERCÍCIO DE RESISTÊNCIA PARA \n  PESCOÇO: INCLINADORES 
+                    
+                    <ion-icon name="arrow-forward"></ion-icon>
+                    
+                    </button> 
+                    
+                    </ion-item>
+                    
+                    
+                    
+                    <ion-item >
+                    
+                    <button ion-item >
+                    CONTROLE ÁLGICO: LASERTERAPIA 
+                    
+                   
+                    
+                    </button> 
+                    
+                    </ion-item>
+                    
+                    
+                    
+                    <ion-item >
+                    
+                    <button ion-item >
+                    DIMINUIR UTILIZAÇÃO DO USO DE COLAR CERVIVAL 
+                    
+                    
+                    
+                    </button> 
+                    
+                    </ion-item>
+                  </ion-item-group>
+                     
+                
+
+                    <ion-item-group>
+                    <!-- QUADRO CRONICO -->
+                    <ion-item-divider color="dark">CIF: CERVICALGIA COM DOR IRRADIADA - QUADRO CRONICO</ion-item-divider>
+                    
+                    <ion-item >
+                    
+                    <button ion-item (click)="openModal68()">
+                    MOBILIZAÇÃO PASSIVA: FLEXÃO CERVICAL 
+                    
+                    <ion-icon name="arrow-forward"></ion-icon>
+                    
+                    </button> 
+                    
+                    </ion-item>
+                    
+                    
+                    
+                    <ion-item >
+                    
+                    <button ion-item (click)="openModal69()">
+                    MOBILIZAÇÃO PASSIVA: INCLINAÇÃO CERVICAL 
+                    
+                    <ion-icon name="arrow-forward"></ion-icon>
+                    
+                    </button> 
+                    
+                    </ion-item>]
+                    
+                    
+                    
+                    <ion-item >
+                    
+                    <button ion-item (click)="openModal70()">
+                    MOBILIZAÇÃO PASSIVA: ROTAÇÃO CERVICAL 
+                    
+                    <ion-icon name="arrow-forward"></ion-icon>
+                    
+                    </button> 
+                    
+                    </ion-item>
+                    
+                    
+                    
+                    
+                    <ion-item >
+                    
+                    <button ion-item (click)="openModal71()">
+                    MANIPULAÇÃO DA CERVICAL E DAS VERTEBRAS TORÁCICAS
+                    
+                    <ion-icon name="arrow-forward"></ion-icon>
+                    
+                    </button> 
+                    
+                    </ion-item>
+                    
+                    
+                    
+                    <ion-item >
+                    
+                    <button ion-item (click)="openModal72()">
+                    EXERCÍCIO DE RESISTÊNCIA PARA PESCOÇO: FLEXORES 
+                    
+                    <ion-icon name="arrow-forward"></ion-icon>
+                    
+                    </button> 
+                    
+                    </ion-item>
+                    
+                    
+                    <ion-item >
+                    
+                    <button ion-item (click)="openModal73()">
+                    EXERCÍCIO DE RESISTÊNCIA PARA PESCOÇO: EXTENSORES 
+                    
+                    <ion-icon name="arrow-forward"></ion-icon>
+                    
+                    </button> 
+                    
+                    </ion-item>
+                    
+                    
+                    
+                    <ion-item >
+                    
+                    <button ion-item (click)="openModal74()">
+                    EXERCÍCIO DE RESISTÊNCIA PARA PESCOÇO: INCLINADORES 
+                    
+                    <ion-icon name="arrow-forward"></ion-icon>
+                    
+                    </button> 
+                    
+                    </ion-item>
+                    
+                    
+                    <ion-item >
+                    
+                    <button ion-item (click)="openModal75()">
+                    ALONGAMENTOS ATIVO PARA FLEXORES  
+                    
+                    <ion-icon name="arrow-forward"></ion-icon>
+                    
+                    </button> 
+                    
+                    </ion-item>
+                    
+                    
+                    <ion-item >
+                    
+                    <button ion-item (click)="openModal76()">
+                    ALONGAMENTO ATIVO PARA EXTENSORES  
+                    
+                    <ion-icon name="arrow-forward"></ion-icon>
+                    
+                    </button> 
+                    
+                    </ion-item>
+                    
+                    <ion-item >
+                    
+                    <button ion-item (click)="openModal77()">
+                    ALONGAMENTO ATIVO PARA INCLINADORES 
+                    
+                    <ion-icon name="arrow-forward"></ion-icon>
+                    
+                    </button> 
+                    
+                    </ion-item>
+                    
+                    
+                    <ion-item >
+                    
+                    <button ion-item (click)="openModal78()">
+                    ALONGAMENTO ATIVO PARA ROTADORES 
+                    
+                    <ion-icon name="arrow-forward"></ion-icon>
+                    
+                    </button> 
+                  </ion-item>
+                    
+                    <ion-item >
+                    
+                    <button ion-item (click)="openModal79()">
+                    EXERCÍCIO DE RESISTÊNCIA PARA CINTURA ESCAPULAR 
+                    
+                    <ion-icon name="arrow-forward"></ion-icon>
+                    
+                    </button> 
+                    
+                    </ion-item>
+                    
+                    
+                    <ion-item >
+                    
+                    <button ion-item (click)="openModal80()">
+                    TRAÇÃO CERVICAL 
+                    
+                    <ion-icon name="arrow-forward"></ion-icon>
+                    
+                    </button> 
+                    
+                    </ion-item>
+                    
+                    <ion-item >
+                    
+                    <button ion-item (click)="openModal81()">
+                    ORIENTAÇÕES 
+                    
+                    <ion-icon name="arrow-forward"></ion-icon>
+                    
+                    </button> 
+                    
+                    </ion-item>
+                  
+                  </ion-item-group>
+                <!-- <ion-item >
+                    <button ion-item (click)="openModal()"> CERVICALGIA COM DEFICIT DE COORDENAÇÃO - QUADRO AGUDO - MONITORAR ESTADO DO PACIENTE
+                   
+                        <ion-icon name="arrow-forward"></ion-icon>
+                      </button> 
+                </ion-item>
+      
+                <ion-item >
+                      <button ion-item (click)="openModal2()"> CERVICALGIA COM DEFICIT DE COORDENAÇÃO - QUADRO AGUDO - ORIENTAÇOES
+                     
+                          <ion-icon name="arrow-forward"></ion-icon>
+                        </button> 
+                  </ion-item>
+      
+                <ion-item >
+                      <button ion-item (click)="openModaltfrc()"> CERVICALGIA COM DEFICIT DE COORDENAÇÃO - QUADRO CRONICO - ORIENTAÇOES
+                     
+                          <ion-icon name="arrow-forward"></ion-icon>
+                        </button> 
+                  </ion-item> -->
+      
+               
+      
+      
+              </ion-item-group>
+            
+              
+            
+            </ion-content>
+         
+      </ion-content>
+      
+               
+      
+      

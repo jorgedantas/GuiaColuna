@@ -1,0 +1,69 @@
+<ion-content padding class="auto-scroll">
+        <ion-grid fixed>
+          <ion-row align-items-center justify-content-center>
+            <ion-col col-12 col-sm-12 col-md-6>
+              <form [formGroup]="form">
+                \n\n\n
+                <h1 text-center class="oleo-script logo-title">Baltagram</h1>
+                \n\n
+                <ion-list no-lines>
+                  <ion-item>
+                    <ion-input type="email" placeholder="E-mail" maxlength="140" formControlName="email"></ion-input>
+                  </ion-item>
+                  <ion-item>
+                    <ion-input type="password" placeholder="Senha" maxlength="20" formControlName="password"></ion-input>
+                  </ion-item>
+                  <ion-scroll style="height: 200px">
+                  <ion-item text-wrap >
+                    TERMOS E CONDIÇÕES E POLÍTICA DE PRIVICIDADE	\n
+
+                    <b>1</b> Termos de uso e responsabilidades.\n
+                    &nbsp;&nbsp;&nbsp; <b>1.1</b>	O aplicativo Guia da Coluna - Clinicalguidelinesé voltado para profissionais fisioterapeutas, e é disponibilizado apenas para os mesmos. \n
+                    &nbsp;&nbsp;&nbsp; <b>1.2</b>	As informações contidas na base de dados do aplicativo, tais como:  vídeos, imagens e textos, tem cunho demonstrativo e não de capacitação do usuário. \n
+                    &nbsp;&nbsp;&nbsp; <b>1.3</b> 	A reprodução de técnicas e manobras, assim como prescrições, realizadas pelo usuário, é de total responsabilidade do mesmo.\n
+                    &nbsp;&nbsp;&nbsp; <b>1.4</b>	\n
+                    
+                    <b>2</b> Política de privacidade\n
+                    &nbsp;&nbsp;&nbsp;<b>2.1</b> Os dados pessoais coletados pelo site são apenas aqueles necessários á identificação do usuário, não sendo coletado dados sensíveis domesmo.Sendo necessário apenasinformações como: nome completo, número do CPF endereço de e-mail.\n
+                    &nbsp;&nbsp;&nbsp;<b>2.2</b> O armazenamento dos dados pessoais está de acordo com a lei federal n. 13.709, de 14 de agosto de 2018 (Lei de Proteção de Dados Pessoais) e com o Regulamento EU n. 2016/679 de 27 de abril de 2016 (Regulamento Geral Europeu de Proteção de Dados Pessoais). \n
+                    &nbsp;&nbsp;&nbsp;<b>2.3</b> Os dados pessoais serão tratados de forma segura e protegida do tratamento não autorizado ou ilícito. (Integridade e confidencialidade)\n
+                    
+                    
+                    <b>3</b> Diretos autorais\n
+                    &nbsp;&nbsp;&nbsp;<b>3.1</b> A estrutura do aplicativo, bem como textos, imagens, vídeos e as demais aplicações informáticas que o compõem, são de propriedade do editor e são protegidas pela legislação brasileiro e internacional referente à propriedade intelectual.\n
+                    &nbsp;&nbsp;&nbsp;<b>3.2</b> O aplicativo é limitado para o público geral, sendo de caráter privado. O compartilhamento de acessos assim como sua comercialização sem consentimento dos idealizados é estritamente vedada, podendo-se recorrer a medidas civis e panais cabíveis. \n
+                    
+
+                  
+
+                    <!-- <ion-item>
+                      <ion-label>Document number</ion-label>
+                      <ion-checkbox  ></ion-checkbox>
+                    </ion-item> -->
+                    
+                  </ion-item>
+
+                  <ion-item>
+                    
+                    <ion-checkbox ngControl="termsAccepted" (ionChange)="onTermsChecked($event)"></ion-checkbox> <ion-label floating>Aceito os Termos</ion-label>
+                  </ion-item>
+
+                </ion-scroll>
+                </ion-list>
+                <button ion-button block large outline (click)="submit()">Cadastrar</button>
+              </form>
+            </ion-col>
+          </ion-row>
+          
+        </ion-grid>
+      </ion-content>
+      
+      <ion-footer>
+        <ion-toolbar text-center>
+          <ion-buttons>
+            <button small ion-button block (click)="goToLogin()" [disabled]="!form.valid">
+              <small>Já tem conta?&nbsp;<strong>Entrar</strong></small>
+            </button>
+          </ion-buttons>
+        </ion-toolbar>
+      </ion-footer>
